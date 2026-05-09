@@ -4,16 +4,17 @@ cask "warden" do
 
   url "https://download.getwarden.org/Warden-latest.dmg"
   name "Warden"
-  desc "macOS menu bar screen locking utility"
-  homepage "https://www.getwarden.org"
+  desc "Menu bar screen locking utility"
+  homepage "https://www.getwarden.org/"
 
+  auto_updates true
   depends_on macos: ">= :sequoia"
 
   app "Warden.app"
 
   zap trash: [
-    "~/Library/Preferences/com.pjadhav.Warden.plist",
     "~/Library/Application Support/com.pjadhav.Warden",
     "~/Library/Caches/com.pjadhav.Warden",
+    "~/Library/Preferences/com.pjadhav.Warden.plist",
   ]
 end
