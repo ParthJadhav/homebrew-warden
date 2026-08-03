@@ -1,6 +1,6 @@
 cask "warden" do
-  version "2.2.3"
-  sha256 "ff50d5837f72ce5371c39bbe1009a9ece9bc3e22a5d3f5c6c9bbe7fea05f066b"
+  version "3.0.0"
+  sha256 "60aaa85e9b56d5f91f4e5337037110ccbb442ef3b79f2596d63f5b91b9cea68a"
 
   url "https://download.getwarden.org/Warden-#{version}.dmg"
   name "Warden"
@@ -12,7 +12,10 @@ cask "warden" do
   end
 
   auto_updates true
-  depends_on macos: ">= :sequoia"
+  # Symbol form means "this release or newer"; the ">= :sequoia"
+  # string form is deprecated in Homebrew 6 and warns on every
+  # install, becoming an error in a future release.
+  depends_on macos: :sequoia
 
   app "Warden.app"
 
