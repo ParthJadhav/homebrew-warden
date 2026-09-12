@@ -1,6 +1,6 @@
 cask "warden" do
-  version "3.0.5"
-  sha256 "1031ef8fa82787ce216e76f43cd51a0e894f11fe033725c13fc285f33f81fb0c"
+  version "3.0.6"
+  sha256 "2d258d877fd7207cc428d9915e1f3289e6a206f603dd16b270d1150a486ccde9"
 
   url "https://download.getwarden.org/Warden-#{version}.dmg"
   name "Warden"
