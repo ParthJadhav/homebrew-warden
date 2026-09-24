@@ -15,4 +15,4 @@ brew install --cask warden
 
 ## About
 
-[Warden](https://github.com/ParthJadhav/Warden-app) is a macOS menu bar utility for screen locking. Requires macOS 15 (Sequoia) or later.
+[Warden](https://www.getwarden.org/) is a macOS menu bar utility that locks keyboard, mouse, and trackpad input while your screen stays visible and your work keeps running. Unlock with Touch ID. Requires macOS 15.2 or later.

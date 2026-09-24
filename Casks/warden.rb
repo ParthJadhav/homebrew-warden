@@ -4,7 +4,7 @@ cask "warden" do
 
   url "https://download.getwarden.org/Warden-#{version}.dmg"
   name "Warden"
-  desc "Menu bar screen locking utility"
+  desc "Lock keyboard, mouse and trackpad input while the screen stays visible"
   homepage "https://www.getwarden.org/"
 
   livecheck do
